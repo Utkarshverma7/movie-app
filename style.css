@@ -31,8 +31,12 @@ header{
 .search::placeholder{
     color: #7378c5;
 }
-img{
+.movie{
     width: 300px;
+    margin-right: 5%;
+}
+.movie img{
+    width: 100%;
     margin-left:0;
     margin-right: 0;
     margin-bottom: 5%;
@@ -40,7 +44,7 @@ img{
 }
 main{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
 }
 /* .movie-info{
