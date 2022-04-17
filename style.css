@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root{
     --primary-color:#22254b;
     --secondary-color:#373b69;
 }
 body{
     background-color: var(--primary-color);
+    color:black;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -12,6 +15,7 @@ header{
     justify-content: flex-end;
     background-color: var(--secondary-color);
 }
+
 .search{
     background-color: transparent;
     border: 2px solid var(--primary-color);
@@ -27,20 +31,18 @@ header{
 .search::placeholder{
     color: #7378c5;
 }
-.row{
-    margin-left: 0;
-    margin-right:0;;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    
-}
 img{
     width: 300px;
     margin-left:0;
     margin-right: 0;
     margin-bottom: 5%;
     border-radius: 5%;
-
-    
 }
+main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+/* .movie-info{
+
+} */
