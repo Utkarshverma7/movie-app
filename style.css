@@ -33,7 +33,13 @@ header{
 }
 .movie{
     width: 300px;
-    margin-right: 5%;
+    height: 400px;
+    margin-right: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1) ;
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
 }
 .movie img{
     width: 100%;
@@ -46,7 +52,41 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-/* .movie-info{
 
-} */
+}
+.movie-info{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+
+} 
+.movie-info h3{
+    margin-top: 0;
+}
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 4%;
+}
+.movie-info span.green{
+    color: lightgreen;
+}
+.movie-info span.orange{
+    color:orange;
+}
+.movie-info span.red{
+    color:red;
+}
+.overview{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white;
+    padding:1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+}
