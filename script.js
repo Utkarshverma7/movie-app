@@ -4,10 +4,12 @@ const API_URL= BASE_URL + "/discover/movie?sort_by=popularity.desc&"+API_KEY;
 const IMG_url='https://image.tmdb.org/t/p/w500';
 const searchURL=BASE_URL+'/search/movie?'+API_KEY;
 const main=document.getElementById('main');
-const form=document.getElementById('search');
+const form=document.getElementById('form');
+const search=document.getElementById('search');
 getmovies(API_URL);
 function getmovies(url){
     fetch(url).then(res=>res.json()).then(data=>{
+        console.log(data.results);
         showmovies(data.results);
     })
 }
@@ -35,7 +37,7 @@ function showmovies(data){
 function getcolor(vote){
     if(vote>=8){
         return 'green'
-    }
+    } 
     else if(vote>=5){
         return 'orange'
     }
