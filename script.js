@@ -1,10 +1,39 @@
 const API_KEY="api_key=694fc8b3d5f5161b0177731528958f70";
 const BASE_URL="https://api.themoviedb.org/3";
 const API_URL= BASE_URL + "/discover/movie?sort_by=popularity.desc&"+API_KEY;
-
+const IMG_url='https://image.tmdb.org/t/p/w500';
 getmovies(API_URL);
 function getmovies(url){
     fetch(url).then(res=>res.json()).then(data=>{
-        console.log(data);}
-    )
+        showmovies(data.results);
+    })
+}
+function showmovies(data){
+     data.forEach(movie => {
+         const{title,poster_path,vote_average,overview}=movie;
+         const movie1=document.createElement('div');
+         movieEl.classlist.add('movie');
+         movieEl.innerHTML=`
+            <img src="${IMG_URL+poster_path}" alt="${title}" />
+            <div class="movie-info">
+                <h2>${title}</h2>
+                <span class="${getcolor(vote_average)}">${vote_average}</span>
+            </div>
+            <div class="overview">
+                <h3>${Overview}</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure cum ex quisquam porro hic reprehenderit quos, blanditiis maxime tenetur recusandae vel consequatur dolore sit necessitatibus non facilis vero labore!
+            </div>`
+        
+        });
+    }
+function getcolor(vote){
+    if(vote>=8){
+        return 'green'
+    }
+    else if(vote>=5){
+        return 'orange'
+    }
+    else{
+        return 'red'
+    }
 }
