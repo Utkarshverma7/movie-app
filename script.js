@@ -50,5 +50,7 @@ form.addEventListener('submit',(e)=>){
     if(searchTerm){
         getmovies(searchURL+'&query='+searchTerm)
     }
-    
+    else{
+        getmovies(API_URL);
+    }
 }
