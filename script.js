@@ -15,7 +15,7 @@ function showmovies(data){
     main.innerHTML='';
      data.forEach(movie => {
          const{title,poster_path,vote_average,overview}=movie;
-         const movie1=document.createElement('div');
+         const movieEl=document.createElement('div');
          movieEl.classlist.add('movie');
          movieEl.innerHTML=`
             <img src="${IMG_URL+poster_path}" alt="${title}" />
@@ -43,7 +43,7 @@ function getcolor(vote){
         return 'red'
     }
 }
-form.addEventListener('submit',(e)=>){
+form.addEventListener('submit',(e)=>{
     e.preventDefault();
 
     const searchTerm=search.value;
