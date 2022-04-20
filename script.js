@@ -53,4 +53,4 @@ form.addEventListener('submit',(e)=>{
     else{
         getmovies(API_URL);
     }
-}
+})
