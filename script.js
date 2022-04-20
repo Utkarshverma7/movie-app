@@ -48,6 +48,7 @@ form.addEventListener('submit',(e)=>){
 
     const searchTerm=search.value;
     if(searchTerm){
-        getmovies(searchURL+'/'+searchTerm)
+        getmovies(searchURL+'&query='+searchTerm)
     }
+    
 }
