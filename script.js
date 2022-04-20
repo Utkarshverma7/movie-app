@@ -14,7 +14,7 @@ function getmovies(url){
 function showmovies(data){
     main.innerHTML='';
      data.forEach(movie => {
-         const{title,poster_path,vote_average,overview}=movie;
+         const{title,poster_path,vote_average, overview}=movie;
          const movieEl=document.createElement('div');
          movieEl.classlist.add('movie');
          movieEl.innerHTML=`
@@ -24,7 +24,7 @@ function showmovies(data){
                 <span class="${getcolor(vote_average)}">${vote_average}</span>
             </div>
             <div class="overview">
-                <h3>${Overview}</h3>
+                <h3>${overview}</h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure cum ex quisquam porro hic reprehenderit quos, blanditiis maxime tenetur recusandae vel consequatur dolore sit necessitatibus non facilis vero labore!
             </div>`
 
