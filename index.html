@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
         </form>
     </header>
     <main id="main">
-        <div class="movie">
+        <div class="movie"> -->
             <!-- <div class="col-lg-3 col-md-5 col-sm-5"> -->
-                <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
+                <!-- <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
                 <div class="movie-info">
                     <h2>Movie title</h2>
                     <span class="green">9.8</span>
@@ -24,12 +24,12 @@
                 <div class="overview">
                     <h3>Overview</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure cum ex quisquam porro hic reprehenderit quos, blanditiis maxime tenetur recusandae vel consequatur dolore sit necessitatibus non facilis vero labore!
-                </div>
+                </div> -->
             <!-- </div> -->
-        </div>
+        <!-- </div>
         <div class="movie">
             <!-- <div class="col-lg-3 col-md-5 col-sm-5"> -->
-                <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
+                <!-- <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
                 <div class="movie-info">
                     <h2>Movie title</h2>
                     <span class="green">9.8</span>
@@ -37,12 +37,12 @@
                 <div class="overview">
                     <h3>Overview</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure cum ex quisquam porro hic reprehenderit quos, blanditiis maxime tenetur recusandae vel consequatur dolore sit necessitatibus non facilis vero labore!
-                </div>
+                </div> --> 
             <!-- </div> -->
-        </div>
+        <!-- </div>
         <div class="movie">
             <!-- <div class="col-lg-3 col-md-5 col-sm-5"> -->
-                <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
+                <!-- <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
                 <div class="movie-info">
                     <h3>Movie title</h3>
                     <span class="green">9.8</span>
@@ -50,12 +50,12 @@
                 <div class="overview">
                     <h3>Overview</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure cum ex quisquam porro hic reprehenderit quos, blanditiis maxime tenetur recusandae vel consequatur dolore sit necessitatibus non facilis vero labore!
-                </div>
+                </div>  -->
             <!-- </div> -->
-        </div>
+        <!-- </div>
         <div class="movie">
             <!-- <div class="col-lg-3 col-md-5 col-sm-5"> -->
-                <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
+                <!-- <img src="istockphoto-1361590339-170667a.jpg" alt="" srcset="" />
                 <div class="movie-info">
                     <h2>Movie title</h2>
                     <span class="green">9.8</span>
@@ -63,10 +63,50 @@
                 <div class="overview">
                     <h3>Overview</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure cum ex quisquam porro hic reprehenderit quos, blanditiis maxime tenetur recusandae vel consequatur dolore sit necessitatibus non facilis vero labore!
-                </div>
+                </div> -->
             <!-- </div> -->
-        </div>
+        <!-- </div>
     </main>
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie App</title>
+</head>
+<body>
+    
+    <header>
+        <form  id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
